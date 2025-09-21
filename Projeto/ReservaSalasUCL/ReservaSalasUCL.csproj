@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CAC3E60-7406-4C78-A914-94F8BB2246D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReservaSalasUCL</RootNamespace>
+    <AssemblyName>ReservaSalasUCL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AgendarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgendarSala.Designer.cs">
+      <DependentUpon>AgendarSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadastrarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastrarSalas.Designer.cs">
+      <DependentUpon>CadastrarSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadastroAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastroAdmin.Designer.cs">
+      <DependentUpon>CadastroAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadastroAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastroAluno.Designer.cs">
+      <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GerenciarReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GerenciarReservas.Designer.cs">
+      <DependentUpon>GerenciarReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginAdminGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginAdminGeral.Designer.cs">
+      <DependentUpon>LoginAdminGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginAluno.Designer.cs">
+      <DependentUpon>LoginAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaAdmin.Designer.cs">
+      <DependentUpon>TelaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaAdminGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaAdminGeral.Designer.cs">
+      <DependentUpon>TelaAdminGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaAluno.Designer.cs">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VerificarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VerificarAgendamento.Designer.cs">
+      <DependentUpon>VerificarAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Administrador.cs" />
+    <Compile Include="Models\Agendamento.cs" />
+    <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\Sala.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminService.cs" />
+    <Compile Include="Services\AlunoService.cs" />
+    <Compile Include="Services\Database.cs" />
+    <EmbeddedResource Include="Forms\AgendarSala.resx">
+      <DependentUpon>AgendarSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadastrarSalas.resx">
+      <DependentUpon>CadastrarSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadastroAdmin.resx">
+      <DependentUpon>CadastroAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadastroAluno.resx">
+      <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GerenciarReservas.resx">
+      <DependentUpon>GerenciarReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginAdminGeral.resx">
+      <DependentUpon>LoginAdminGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginAluno.resx">
+      <DependentUpon>LoginAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaAdmin.resx">
+      <DependentUpon>TelaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaAdminGeral.resx">
+      <DependentUpon>TelaAdminGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaAluno.resx">
+      <DependentUpon>TelaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VerificarAgendamento.resx">
+      <DependentUpon>VerificarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>
