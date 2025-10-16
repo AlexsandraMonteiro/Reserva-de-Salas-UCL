@@ -18,11 +18,11 @@ A solução foi criada utilizando a linguagem C#, com interface gráfica em Wind
 
 <h2>🚀 Funcionalidades</h2>
 
-✅ Cadastro de laboratórios
-✅ Cadastro de alunos/administradores
-✅ Consulta de disponibilidade
-✅ Reserva de horários
-✅ Edição e exclusão de reservas
+✅ Cadastro de laboratórios<br>
+✅ Cadastro de alunos/administradores<br>
+✅ Consulta de disponibilidade<br>
+✅ Reserva de horários<br>
+✅ Edição e exclusão de reservas<br>
 ✅ Armazenamento local das informações via SQLite
 
 <h2>🧰 Como executar o projeto</h2>
