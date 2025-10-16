@@ -1,22 +1,22 @@
 # 🧪 Sistema de Reserva de Laboratórios – UCL
 
-<h1>📘 Sobre o projeto</h1>
+<h2>📘 Sobre o projeto</h2>
 
-Este projeto foi desenvolvido como parte de um trabalho acadêmico na UCL (Universidade Castelo Branco), com o objetivo de resolver um problema real enfrentado pela instituição: o gerenciamento e controle das reservas de laboratórios.
+Este projeto foi desenvolvido como parte de um trabalho acadêmico na UCL (Universidade do Centro Leste), com o objetivo de resolver um problema real: o gerenciamento e controle das reservas de laboratórios.
 
 A solução foi criada utilizando a linguagem C#, com interface gráfica em Windows Forms e banco de dados SQLite, proporcionando uma aplicação simples, eficiente e de fácil manutenção.
 
-<h1>⚙️ Tecnologias utilizadas</h1>
+<h2>⚙️ Tecnologias utilizadas</h2>
 
-🖥️ C#
+- 🖥️ C#
 
-🪟 .NET Windows Forms
+- 🪟 .NET Windows Forms
 
-💾 SQLite
+- 💾 SQLite
 
-🧱 Visual Studio (ambiente de desenvolvimento)
+- 🧱 Visual Studio (ambiente de desenvolvimento)
 
-<h1>🚀 Funcionalidades</h1>
+<h2>🚀 Funcionalidades</h2>
 
 ✅ Cadastro de laboratórios
 ✅ Cadastro de alunos/administradores
@@ -25,35 +25,30 @@ A solução foi criada utilizando a linguagem C#, com interface gráfica em Wind
 ✅ Edição e exclusão de reservas
 ✅ Armazenamento local das informações via SQLite
 
-<h1>🧰 Como executar o projeto</h1>
+<h2>🧰 Como executar o projeto</h2>
 
-Clone este repositório
-
+1. Clone este repositório<br>
 git clone https://github.com/AlexsandraMonteiro/Reserva-de-Salas-UCL.git
 
+2. Abra o projeto no Visual Studio<br>
+3. Restaure as dependências (se necessário)<br>
+4. Execute o projeto<br>
+5. Pressione F5 ou clique em Iniciar no Visual Studio<br>
 
-Abra o projeto no Visual Studio
+<h2>🗃️ Banco de Dados</h2>
 
-Restaure as dependências (se necessário)
-
-Execute o projeto
-
-Pressione F5 ou clique em Iniciar no Visual Studio
-
-<h1>🗃️ Banco de Dados</h1>
-
-O projeto utiliza SQLite como banco de dados local.
-O arquivo .db deve estar na pasta do projeto para que a aplicação funcione corretamente.
+O projeto utiliza SQLite como banco de dados local.<br>
+O arquivo .db deve estar na pasta do projeto para que a aplicação funcione corretamente.<br>
 
 Caso queira iniciar com um banco vazio, basta criar uma nova instância do arquivo com o mesmo nome configurado no código.
 
-<h1>🧑‍💻 Autora</h1>
+<h2>👩‍💻 Autora</h2>
 
-Desenvolvido por Alexsandra Monteiro Ribeiro
-📧 Contato: ribeiro913272@gmail.com
-💼 GitHub: github.com/AlexsandraMonteiro
+<p>Desenvolvido por Alexsandra Monteiro Ribeiro<br>
+📧 Contato: ribeiro913272@gmail.com<br>
+💼 GitHub: github.com/AlexsandraMonteiro</p>
 
-<h1>🌟 Licença</h1>
+<h2>🌟 Licença</h2>
 
-Este projeto foi desenvolvido para fins educacionais, como parte das atividades da UCL.
+Este projeto foi desenvolvido para fins educacionais, como parte das atividades da UCL.<br>
 Sinta-se à vontade para estudar, adaptar e evoluir este código.
